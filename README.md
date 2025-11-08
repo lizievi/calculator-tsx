@@ -1,100 +1,72 @@
-🧮 Calculator-TSX: Calculadora Básica (React, TypeScript, Tailwind)
+# Calculadora Básica en React con TypeScript
 
-Este es un miniproyecto de práctica desarrollado para implementar una Calculadora Básica utilizando tecnologías modernas. El enfoque principal del proyecto ha sido la construcción de la interfaz de usuario (UI) con una arquitectura de componentes limpia y un diseño responsivo.
+Este es un proyecto de calculadora básica construida con **React**, **TypeScript**, y **Tailwind CSS**. Permite realizar operaciones matemáticas simples, como suma, resta, multiplicación, división y más. Además, incluye manejo de errores para evitar resultados como "Infinity" o "Error" debido a entradas incorrectas.
 
-🚀 Estado del Proyecto
+## Tecnologías Utilizadas
 
-Característica
+- **React**: Biblioteca para construir interfaces de usuario.
+- **TypeScript**: Superset de JavaScript que añade tipado estático.
+- **Tailwind CSS**: Framework CSS para un diseño rápido y flexible.
+- **Math.js**: Librería para realizar evaluaciones matemáticas de forma segura.
+- **Vite**: Herramienta de desarrollo rápida para proyectos modernos en JavaScript y TypeScript.
 
-Estado
+## Estructura del Proyecto
 
-Notas
+La estructura del proyecto es la siguiente:
 
-Interfaz (UI/UX)
+calculator-tsx/
+├── public/
+│ └── index.html
+├── src/
+│ ├── components/
+│ │ ├── Button.tsx
+│ │ ├── Screen.tsx
+│ │ └── Title.tsx
+│ ├── App.tsx
+│ ├── index.tsx
+│ └── styles/
+│ └── index.css
+├── package.json
+└── vite.config.ts
 
-✅ Completa
+### Descripción de los Componentes:
 
-Se han definido los componentes Button, ButtonClear, Screen, y Title. El diseño se ha implementado utilizando Tailwind CSS.
+- **Button.tsx**: Componente que representa un botón de la calculadora. Usa un estilo condicional basado en el tipo de botón (número, operador, etc.).
+- **Screen.tsx**: Componente que muestra el valor actual de la pantalla de la calculadora.
+- **Title.tsx**: Componente que muestra el título de la aplicación.
 
-Lógica Funcional
+## Instalación
 
-⏳ Pendiente
+1. Clona el repositorio en tu máquina local:
 
-Falta implementar la lógica de las operaciones matemáticas (suma, resta, multiplicación, división, y manejo de la entrada de números).
+  ```bash
+   git clone https://github.com/tu_usuario/calculator-tsx.git
+2. Navega al directorio del proyecto:
+  ```bash
+    cd calculator-tsx
+3. Instala las dependencias utilizando npm o yarn:
+   ```bash
+    npm install
+4. Inicia el servidor de desarrollo:
+   ```bash
+    npm run dev
+Esto abrirá la aplicación en http://localhost:5173/ (puerto predeterminado de Vite).
 
-Pruebas
+USO
 
-❌ No iniciadas
+La calculadora permite realizar operaciones matemáticas básicas. Puedes agregar números y operadores presionando los botones. El botón de AC limpia la pantalla, y el botón de = calcula el resultado de la expresión.
 
-Pendiente de añadir pruebas unitarias.
+Botones disponibles:
 
-🛠️ Tecnologías Utilizadas
+Números: 0 - 9
 
-Este proyecto fue iniciado con Vite y utiliza las siguientes herramientas en su stack:
+Operadores: +, -, *, /, %
 
-Framework: React v19.1.1
+Funciones adicionales: (, ), ., AC
 
-Lenguaje: TypeScript
+Botón de igual = para obtener el resultado.
 
-Estilos: Tailwind CSS v4.1.17 (Zero-config)
+MANEJO DE ERRORES
 
-Bundler: Vite v7.1.7
+Si se produce un error de sintaxis o un resultado de "Infinity", se mostrará un mensaje de alerta y la pantalla se limpiará automáticamente.
 
-Gestor de Paquetes: npm (ver package.json)
-
-📂 Estructura de Archivos Clave
-
-La aplicación sigue una estructura modular para mantener la claridad del código:
-
-src/
-├── components/           # Componentes reusables de la UI
-│   ├── Button.tsx        # Botón estándar de la calculadora
-│   ├── ButtonClear.tsx   # Botón para la función "C" o "CE"
-│   ├── Screen.tsx        # Pantalla donde se muestra la entrada/resultado
-│   └── Title.tsx         # Título de la aplicación
-├── pages/
-│   └── Calculator.tsx    # Contiene toda la lógica y la disposición (Layout) de la calculadora
-├── App.tsx               # Componente principal que renderiza la aplicación
-├── main.tsx              # Punto de entrada de la aplicación
-└── index.css             # Estilos globales y reseteo
-
-
-⚙️ Configuración y Ejecución Local
-
-Para poner en marcha el proyecto en tu máquina local, sigue los siguientes pasos:
-
-1. Clonar el Repositorio
-
-# Reemplaza con el comando de clonación si estuviera en un repositorio
-# git clone [URL_DEL_REPO]
-# cd calculator-tsx
-
-
-2. Instalar Dependencias
-
-Asegúrate de tener Node.js v22+ instalado.
-
-npm install
-
-
-3. Modo Desarrollo
-
-Ejecuta el proyecto en modo desarrollo con recarga en caliente (hot module replacement).
-
-npm run dev
-
-
-La aplicación estará disponible en http://localhost:5173 (o el puerto que te indique Vite).
-
-4. Compilar para Producción
-
-Genera la versión optimizada para despliegue.
-
-npm run build
-
-
-5. Previsualización de Producción
-
-Sirve la compilación localmente para verificar el resultado del build.
-
-npm run preview
