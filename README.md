@@ -14,20 +14,23 @@ Este es un proyecto de calculadora básica construida con **React**, **TypeScrip
 
 La estructura del proyecto es la siguiente:
 
+```plaintext
 calculator-tsx/
 ├── public/
-│ └── index.html
+│   └── index.html
 ├── src/
-│ ├── components/
-│ │ ├── Button.tsx
-│ │ ├── Screen.tsx
-│ │ └── Title.tsx
-│ ├── App.tsx
-│ ├── index.tsx
-│ └── styles/
-│ └── index.css
+│   ├── components/
+│   │   ├── Button.tsx
+│   │   ├── Screen.tsx
+│   │   └── Title.tsx
+│   ├── App.tsx
+│   ├── index.tsx
+│   └── styles/
+│       └── index.css
 ├── package.json
 └── vite.config.ts
+
+```
 
 ### Descripción de los Componentes:
 
@@ -41,15 +44,19 @@ calculator-tsx/
 
   ```bash
    git clone https://github.com/tu_usuario/calculator-tsx.git
+  ```
 2. Navega al directorio del proyecto:
   ```bash
     cd calculator-tsx
+  ```
 3. Instala las dependencias utilizando npm o yarn:
    ```bash
     npm install
+  ```
 4. Inicia el servidor de desarrollo:
    ```bash
     npm run dev
+  ```
 Esto abrirá la aplicación en http://localhost:5173/ (puerto predeterminado de Vite).
 
 USO
