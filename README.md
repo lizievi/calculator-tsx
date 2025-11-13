@@ -77,3 +77,5 @@ MANEJO DE ERRORES
 
 Si se produce un error de sintaxis o un resultado de "Infinity", se mostrará un mensaje de alerta y la pantalla se limpiará automáticamente.
 
+
+
